@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   position: relative;
   font-size: 15px;
   min-width: 320px;
@@ -988,6 +989,69 @@ input::placeholder, textarea::placeholder {
   z-index: 3;
 }
 
+.header-burger {
+  position: relative;
+  width: 34px;
+  height: 18px;
+  z-index: 3;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.header-burger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  height: 2px;
+  border-radius: 60px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header-burger span:nth-child(1) {
+  top: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header-burger span:nth-child(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header-burger span:nth-child(3) {
+  bottom: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header-burger.open span {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header-burger.open span:nth-child(1) {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
+.header-burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header-burger.open span:nth-child(3) {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+
 .header-circle {
   width: 42px;
   height: 42px;
@@ -1088,14 +1152,16 @@ input::placeholder, textarea::placeholder {
   padding: 43px 0;
   top: unset;
   left: unset;
+  z-index: 6;
 }
 
 .header.header-static > svg {
   position: absolute;
   left: 0;
-  bottom: -32px;
+  bottom: -30px;
   width: 100%;
   height: auto;
+  z-index: -2;
 }
 
 .header.header-static .header-circle {
@@ -1263,7 +1329,7 @@ input::placeholder, textarea::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 154px;
+  width: 224px;
   height: 101px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 43px 80px rgba(91, 138, 198, 0.07), 0px 9.60461px 17.869px rgba(91, 138, 198, 0.0417275), 0px 2.85954px 5.32008px rgba(91, 138, 198, 0.0282725);
@@ -1275,6 +1341,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .intro-link__text {
+  text-align: center;
   margin-top: 11px;
   font-size: 14px;
   font-family: 'Gilroy Semibold';
@@ -1375,7 +1442,13 @@ input::placeholder, textarea::placeholder {
 }
 
 .main-search-form.show {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-search-form-block {
@@ -1524,7 +1597,7 @@ input::placeholder, textarea::placeholder {
 .main-search-advanced-item .main-search-elem__input {
   border: 1px solid rgba(36, 36, 36, 0.15);
   border-radius: 14px;
-  padding: 17px;
+  padding: 15px;
   width: 100%;
   text-align: center;
 }
@@ -2033,6 +2106,7 @@ input::placeholder, textarea::placeholder {
   height: 100%;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  padding: 20px 10px;
 }
 
 .result-item-recall-head__square {
@@ -2103,6 +2177,7 @@ input::placeholder, textarea::placeholder {
   left: 0;
   top: 0;
   width: 100%;
+  border-radius: 24px;
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(5px);
@@ -2221,7 +2296,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .result-item-history__link {
-  margin: 50px 0 30px 0;
+  margin-top: 50px;
 }
 
 .result-item-history__link p {
@@ -2667,12 +2742,18 @@ input::placeholder, textarea::placeholder {
 }
 
 .vacancy-edit-form-filter {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+}
+
+.vacancy-edit-form-filter-top {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .vacancy-edit-form-filter__btn {
   padding: 16px 20px;
   background: #EAEFF5;
+  margin-bottom: 10px;
   border-radius: 8px;
   color: #5B8AC6;
   -webkit-transition: all 0.5s ease;
@@ -2762,29 +2843,28 @@ input::placeholder, textarea::placeholder {
 }
 
 .vacancy-people-block {
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
-.vacancy-people-block-head {
-  margin-left: 115px;
-  margin-bottom: 20px;
-}
-
-.vacancy-people-block-head span {
+.vacancy-people-block-head > span {
   color: #242424;
   font-size: 22px;
   font-family: 'Gilroy Semibold';
   display: inline-block;
 }
 
-.vacancy-people-block-head span:nth-child(1) {
-  width: 490px;
-  margin-right: 25px;
+.vacancy-people-block-head > span:nth-child(2) {
+  width: 510px;
+  margin-left: 50px;
 }
 
-.vacancy-people-block-head span:nth-child(2) {
-  width: 345px;
-  margin-right: 25px;
+.vacancy-people-block-head > span:nth-child(3) {
+  width: 340px;
+}
+
+.vacancy-people-block-head > span:nth-child(4) {
+  width: 224px;
+  text-align: center;
 }
 
 .vacancy-people-item {
@@ -2833,7 +2913,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .vacancy-people-item__age {
-  margin: 5px 0 10px 0;
+  margin-top: 5px;
   color: #5B8AC6;
   font-family: 'Gilroy Semibold';
 }
@@ -3372,7 +3452,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .footer-block:nth-child(3) {
-  width: 125px;
+  width: 144px;
 }
 
 .footer__address, .footer__phone {
@@ -3421,6 +3501,12 @@ input::placeholder, textarea::placeholder {
 
 .footer__political:hover {
   color: #5B8AC6;
+}
+
+.favorite {
+  /*.vacancy-people-block {
+        margin-top: 0;
+    }*/
 }
 
 .favorite-wrapper {
@@ -3526,10 +3612,6 @@ input::placeholder, textarea::placeholder {
 .favorite-result__btn {
   margin: 0 auto;
   padding: 16px;
-}
-
-.favorite .vacancy-people-block {
-  margin-top: 0;
 }
 
 .favorite .vacancy-people-item-post__text {

@@ -43,6 +43,11 @@
         <header class="header header-static">
             <div class="container">
                 <div class="header-wrapper f-jcsb">
+                    <button class="header-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <div class="header-data f-jcsb ">
                         <div class="header-data-item f-center">
                             <div class="header-circle f-center-center">
@@ -194,160 +199,161 @@
                             </a>
                         </div>
                         <div class="vacancy-people-block">
-                            <div class="vacancy-people-block-head">
+                            <div class="vacancy-people-block-head f-center">
+                                <div class="vacancy-people-checkbox-all checkbox">
+                                    <input type="hidden" name="">
+                                    <span>
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.3999 4.59998L5.3999 8.59998L13.3999 0.599976" stroke="#5B8AC6" stroke-width="1.5"/>
+                                        </svg>
+                                    </span>
+                                </div>
                                 <span>Кандидат</span>
                                 <span>Вакансия</span>
                                 <span>Статус</span>
                             </div>
-                            <ul class="vacancy-people-list">
-                                <li class="vacancy-people-item f-jcsb">
-                                    <div class="vacancy-people-item-checkbox f-center checkbox">
-                                        <input type="hidden" name="man">
-                                        <span>
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.3999 4.59998L5.3999 8.59998L13.3999 0.599976" stroke="#5B8AC6" stroke-width="1.5"/>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                    <div class="vacancy-people-item-info f-center">
-                                        <div class="vacancy-people-item-info-image">
-                                            <img src="assets/img/people/image.svg" alt="" class="img-cover">
+                            <div class="vacancy-people-block">
+                                <ul class="vacancy-people-list">
+                                    <li class="vacancy-people-item f-jcsb">
+                                        <div class="vacancy-people-item-checkbox f-center checkbox">
+                                            <input type="hidden" name="man">
+                                            <span>
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.3999 4.59998L5.3999 8.59998L13.3999 0.599976" stroke="#5B8AC6" stroke-width="1.5"/>
+                                                </svg>
+                                            </span>
                                         </div>
-                                        <div class="vacancy-people-item-info-inner">
-                                            <p class="vacancy-people-item__name">
-                                                Бровко Вячеслав
-                                            </p>
-                                            <p class="vacancy-people-item__age">
-                                                48 лет
-                                            </p>
-                                            <p class="vacancy-people-item__other">
-                                                Не указана
-                                            </p>
-                                            <p class="vacancy-people-item__where">
-                                                Кандидат увидел вакансию на HH.ru
-                                            </p>
-                                            <p class="vacancy-people-item__date">
-                                                05.09.2022
-                                            </p>
+                                        <div class="vacancy-people-item-info f-center">
+                                            <div class="vacancy-people-item-info-image">
+                                                <img src="assets/img/people/image.svg" alt="" class="img-cover">
+                                            </div>
+                                            <div class="vacancy-people-item-info-inner">
+                                                <p class="vacancy-people-item__name">
+                                                    Бровко Вячеслав
+                                                </p>
+                                                <p class="vacancy-people-item__age">
+                                                    48 лет
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="vacancy-people-item-post f-dc">
-                                        <p class="vacancy-people-item-post__text">
-                                            <span>11.02.2022 15:11</span> <br>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        </p>
-                                        <div class="vacancy-people-item-post-inner f-center">
-                                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.5 8.37894C10.9597 8.37894 11.4149 8.46948 11.8395 8.6454C12.2642 8.82131 12.6501 9.07915 12.9752 9.4042C13.3002 9.72924 13.5581 10.1151 13.734 10.5398C13.9099 10.9645 14.0004 11.4197 14.0004 11.8794C14.0004 12.3391 13.9099 12.7942 13.734 13.2189C13.5581 13.6436 13.3002 14.0295 12.9752 14.3546C12.6501 14.6796 12.2642 14.9374 11.8395 15.1134C11.4149 15.2893 10.9597 15.3798 10.5 15.3798C9.57161 15.3798 8.68126 15.011 8.02481 14.3546C7.36835 13.6981 6.99955 12.8078 6.99955 11.8794C6.99955 10.951 7.36835 10.0607 8.02481 9.4042C8.68126 8.74774 9.57161 8.37894 10.5 8.37894ZM10.5 9.69144C9.91971 9.69144 9.3632 9.92196 8.95288 10.3323C8.54256 10.7426 8.31205 11.2991 8.31205 11.8794C8.31205 12.4597 8.54256 13.0162 8.95288 13.4265C9.3632 13.8368 9.91971 14.0673 10.5 14.0673C11.0803 14.0673 11.6368 13.8368 12.0471 13.4265C12.4574 13.0162 12.6879 12.4597 12.6879 11.8794C12.6879 11.2991 12.4574 10.7426 12.0471 10.3323C11.6368 9.92196 11.0803 9.69144 10.5 9.69144ZM10.5 5.31294C14.5372 5.31294 18.0206 8.06919 18.9879 11.9319C19.0111 12.0162 19.0171 12.1043 19.0057 12.1911C18.9943 12.2778 18.9656 12.3613 18.9215 12.4368C18.8773 12.5123 18.8185 12.5782 18.7485 12.6306C18.6785 12.6831 18.5988 12.721 18.5139 12.7422C18.429 12.7633 18.3408 12.7673 18.2544 12.7539C18.168 12.7405 18.0851 12.7099 18.0106 12.6641C17.9362 12.6182 17.8717 12.5578 17.8209 12.4866C17.7701 12.4155 17.734 12.3348 17.7148 12.2495C17.3087 10.6434 16.3782 9.21866 15.0709 8.2011C13.7635 7.18355 12.154 6.63133 10.4973 6.63193C8.8406 6.63253 7.23148 7.18593 5.92485 8.20443C4.61823 9.22294 3.68882 10.6483 3.28386 12.2548C3.24057 12.4225 3.1327 12.5663 2.98379 12.6548C2.83488 12.7434 2.65701 12.7694 2.48897 12.7273C2.32092 12.6852 2.17634 12.5784 2.08675 12.4301C1.99717 12.2818 1.96984 12.1042 2.01074 11.9358C2.48546 10.0438 3.57859 8.36456 5.11659 7.16469C6.65459 5.96482 8.54932 5.31309 10.5 5.31294Z" fill="black"/>
-                                            </svg>                                                
-                                            <span>16:21   05.09. 2022</span>
+                                        <div class="vacancy-people-item-post f-dc">
+                                            <p class="vacancy-people-item-post__text">
+                                                <span>11.02.2022 15:11</span> <br>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            </p>
+                                            <div class="vacancy-people-item-post-inner f-center">
+                                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.5 8.37894C10.9597 8.37894 11.4149 8.46948 11.8395 8.6454C12.2642 8.82131 12.6501 9.07915 12.9752 9.4042C13.3002 9.72924 13.5581 10.1151 13.734 10.5398C13.9099 10.9645 14.0004 11.4197 14.0004 11.8794C14.0004 12.3391 13.9099 12.7942 13.734 13.2189C13.5581 13.6436 13.3002 14.0295 12.9752 14.3546C12.6501 14.6796 12.2642 14.9374 11.8395 15.1134C11.4149 15.2893 10.9597 15.3798 10.5 15.3798C9.57161 15.3798 8.68126 15.011 8.02481 14.3546C7.36835 13.6981 6.99955 12.8078 6.99955 11.8794C6.99955 10.951 7.36835 10.0607 8.02481 9.4042C8.68126 8.74774 9.57161 8.37894 10.5 8.37894ZM10.5 9.69144C9.91971 9.69144 9.3632 9.92196 8.95288 10.3323C8.54256 10.7426 8.31205 11.2991 8.31205 11.8794C8.31205 12.4597 8.54256 13.0162 8.95288 13.4265C9.3632 13.8368 9.91971 14.0673 10.5 14.0673C11.0803 14.0673 11.6368 13.8368 12.0471 13.4265C12.4574 13.0162 12.6879 12.4597 12.6879 11.8794C12.6879 11.2991 12.4574 10.7426 12.0471 10.3323C11.6368 9.92196 11.0803 9.69144 10.5 9.69144ZM10.5 5.31294C14.5372 5.31294 18.0206 8.06919 18.9879 11.9319C19.0111 12.0162 19.0171 12.1043 19.0057 12.1911C18.9943 12.2778 18.9656 12.3613 18.9215 12.4368C18.8773 12.5123 18.8185 12.5782 18.7485 12.6306C18.6785 12.6831 18.5988 12.721 18.5139 12.7422C18.429 12.7633 18.3408 12.7673 18.2544 12.7539C18.168 12.7405 18.0851 12.7099 18.0106 12.6641C17.9362 12.6182 17.8717 12.5578 17.8209 12.4866C17.7701 12.4155 17.734 12.3348 17.7148 12.2495C17.3087 10.6434 16.3782 9.21866 15.0709 8.2011C13.7635 7.18355 12.154 6.63133 10.4973 6.63193C8.8406 6.63253 7.23148 7.18593 5.92485 8.20443C4.61823 9.22294 3.68882 10.6483 3.28386 12.2548C3.24057 12.4225 3.1327 12.5663 2.98379 12.6548C2.83488 12.7434 2.65701 12.7694 2.48897 12.7273C2.32092 12.6852 2.17634 12.5784 2.08675 12.4301C1.99717 12.2818 1.96984 12.1042 2.01074 11.9358C2.48546 10.0438 3.57859 8.36456 5.11659 7.16469C6.65459 5.96482 8.54932 5.31309 10.5 5.31294Z" fill="black"/>
+                                                </svg>                                                
+                                                <span>16:21   05.09. 2022</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="vacancy-people-item-panel f-dc-center">
-                                        <button class="vacancy-people-item-panel__btn btn btn-transp f-center-center">
-                                            Удалить                                               
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="vacancy-people-item f-jcsb">
-                                    <div class="vacancy-people-item-checkbox f-center checkbox">
-                                        <input type="hidden" name="man">
-                                        <span>
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.3999 4.59998L5.3999 8.59998L13.3999 0.599976" stroke="#5B8AC6" stroke-width="1.5"/>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                    <div class="vacancy-people-item-info f-center">
-                                        <div class="vacancy-people-item-info-image">
-                                            <img src="assets/img/people/image.svg" alt="" class="img-cover">
+                                        <div class="vacancy-people-item-panel f-dc-center">
+                                            <button class="vacancy-people-item-panel__btn btn btn-transp f-center-center">
+                                                Удалить                                               
+                                            </button>
                                         </div>
-                                        <div class="vacancy-people-item-info-inner">
-                                            <p class="vacancy-people-item__name">
-                                                Бровко Вячеслав
-                                            </p>
-                                            <p class="vacancy-people-item__age">
-                                                48 лет
-                                            </p>
-                                            <p class="vacancy-people-item__other">
-                                                Не указана
-                                            </p>
-                                            <p class="vacancy-people-item__where">
-                                                Кандидат увидел вакансию на HH.ru
-                                            </p>
-                                            <p class="vacancy-people-item__date">
-                                                05.09.2022
-                                            </p>
+                                    </li>
+                                    <li class="vacancy-people-item f-jcsb">
+                                        <div class="vacancy-people-item-checkbox f-center checkbox">
+                                            <input type="hidden" name="man">
+                                            <span>
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.3999 4.59998L5.3999 8.59998L13.3999 0.599976" stroke="#5B8AC6" stroke-width="1.5"/>
+                                                </svg>
+                                            </span>
                                         </div>
-                                    </div>
-                                    <div class="vacancy-people-item-post f-dc">
-                                        <p class="vacancy-people-item-post__text">
-                                            <span>11.02.2022 15:11</span> <br>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        </p>
-                                        <div class="vacancy-people-item-post-inner f-center">
-                                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.5 8.37894C10.9597 8.37894 11.4149 8.46948 11.8395 8.6454C12.2642 8.82131 12.6501 9.07915 12.9752 9.4042C13.3002 9.72924 13.5581 10.1151 13.734 10.5398C13.9099 10.9645 14.0004 11.4197 14.0004 11.8794C14.0004 12.3391 13.9099 12.7942 13.734 13.2189C13.5581 13.6436 13.3002 14.0295 12.9752 14.3546C12.6501 14.6796 12.2642 14.9374 11.8395 15.1134C11.4149 15.2893 10.9597 15.3798 10.5 15.3798C9.57161 15.3798 8.68126 15.011 8.02481 14.3546C7.36835 13.6981 6.99955 12.8078 6.99955 11.8794C6.99955 10.951 7.36835 10.0607 8.02481 9.4042C8.68126 8.74774 9.57161 8.37894 10.5 8.37894ZM10.5 9.69144C9.91971 9.69144 9.3632 9.92196 8.95288 10.3323C8.54256 10.7426 8.31205 11.2991 8.31205 11.8794C8.31205 12.4597 8.54256 13.0162 8.95288 13.4265C9.3632 13.8368 9.91971 14.0673 10.5 14.0673C11.0803 14.0673 11.6368 13.8368 12.0471 13.4265C12.4574 13.0162 12.6879 12.4597 12.6879 11.8794C12.6879 11.2991 12.4574 10.7426 12.0471 10.3323C11.6368 9.92196 11.0803 9.69144 10.5 9.69144ZM10.5 5.31294C14.5372 5.31294 18.0206 8.06919 18.9879 11.9319C19.0111 12.0162 19.0171 12.1043 19.0057 12.1911C18.9943 12.2778 18.9656 12.3613 18.9215 12.4368C18.8773 12.5123 18.8185 12.5782 18.7485 12.6306C18.6785 12.6831 18.5988 12.721 18.5139 12.7422C18.429 12.7633 18.3408 12.7673 18.2544 12.7539C18.168 12.7405 18.0851 12.7099 18.0106 12.6641C17.9362 12.6182 17.8717 12.5578 17.8209 12.4866C17.7701 12.4155 17.734 12.3348 17.7148 12.2495C17.3087 10.6434 16.3782 9.21866 15.0709 8.2011C13.7635 7.18355 12.154 6.63133 10.4973 6.63193C8.8406 6.63253 7.23148 7.18593 5.92485 8.20443C4.61823 9.22294 3.68882 10.6483 3.28386 12.2548C3.24057 12.4225 3.1327 12.5663 2.98379 12.6548C2.83488 12.7434 2.65701 12.7694 2.48897 12.7273C2.32092 12.6852 2.17634 12.5784 2.08675 12.4301C1.99717 12.2818 1.96984 12.1042 2.01074 11.9358C2.48546 10.0438 3.57859 8.36456 5.11659 7.16469C6.65459 5.96482 8.54932 5.31309 10.5 5.31294Z" fill="black"/>
-                                            </svg>                                                
-                                            <span>16:21   05.09. 2022</span>
+                                        <div class="vacancy-people-item-info f-center">
+                                            <div class="vacancy-people-item-info-image">
+                                                <img src="assets/img/people/image.svg" alt="" class="img-cover">
+                                            </div>
+                                            <div class="vacancy-people-item-info-inner">
+                                                <p class="vacancy-people-item__name">
+                                                    Бровко Вячеслав
+                                                </p>
+                                                <p class="vacancy-people-item__age">
+                                                    48 лет
+                                                </p>
+                                                <p class="vacancy-people-item__other">
+                                                    Не указана
+                                                </p>
+                                                <p class="vacancy-people-item__where">
+                                                    Кандидат увидел вакансию на HH.ru
+                                                </p>
+                                                <p class="vacancy-people-item__date">
+                                                    05.09.2022
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="vacancy-people-item-panel f-dc-center">
-                                        <button class="vacancy-people-item-panel__btn btn btn-transp f-center-center">
-                                            Удалить                                               
-                                        </button>
-                                    </div>
-                                </li>
-                                <li class="vacancy-people-item f-jcsb">
-                                    <div class="vacancy-people-item-checkbox f-center checkbox">
-                                        <input type="hidden" name="man">
-                                        <span>
-                                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.3999 4.59998L5.3999 8.59998L13.3999 0.599976" stroke="#5B8AC6" stroke-width="1.5"/>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                    <div class="vacancy-people-item-info f-center">
-                                        <div class="vacancy-people-item-info-image">
-                                            <img src="assets/img/people/image.svg" alt="" class="img-cover">
+                                        <div class="vacancy-people-item-post f-dc">
+                                            <p class="vacancy-people-item-post__text">
+                                                <span>11.02.2022 15:11</span> <br>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            </p>
+                                            <div class="vacancy-people-item-post-inner f-center">
+                                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.5 8.37894C10.9597 8.37894 11.4149 8.46948 11.8395 8.6454C12.2642 8.82131 12.6501 9.07915 12.9752 9.4042C13.3002 9.72924 13.5581 10.1151 13.734 10.5398C13.9099 10.9645 14.0004 11.4197 14.0004 11.8794C14.0004 12.3391 13.9099 12.7942 13.734 13.2189C13.5581 13.6436 13.3002 14.0295 12.9752 14.3546C12.6501 14.6796 12.2642 14.9374 11.8395 15.1134C11.4149 15.2893 10.9597 15.3798 10.5 15.3798C9.57161 15.3798 8.68126 15.011 8.02481 14.3546C7.36835 13.6981 6.99955 12.8078 6.99955 11.8794C6.99955 10.951 7.36835 10.0607 8.02481 9.4042C8.68126 8.74774 9.57161 8.37894 10.5 8.37894ZM10.5 9.69144C9.91971 9.69144 9.3632 9.92196 8.95288 10.3323C8.54256 10.7426 8.31205 11.2991 8.31205 11.8794C8.31205 12.4597 8.54256 13.0162 8.95288 13.4265C9.3632 13.8368 9.91971 14.0673 10.5 14.0673C11.0803 14.0673 11.6368 13.8368 12.0471 13.4265C12.4574 13.0162 12.6879 12.4597 12.6879 11.8794C12.6879 11.2991 12.4574 10.7426 12.0471 10.3323C11.6368 9.92196 11.0803 9.69144 10.5 9.69144ZM10.5 5.31294C14.5372 5.31294 18.0206 8.06919 18.9879 11.9319C19.0111 12.0162 19.0171 12.1043 19.0057 12.1911C18.9943 12.2778 18.9656 12.3613 18.9215 12.4368C18.8773 12.5123 18.8185 12.5782 18.7485 12.6306C18.6785 12.6831 18.5988 12.721 18.5139 12.7422C18.429 12.7633 18.3408 12.7673 18.2544 12.7539C18.168 12.7405 18.0851 12.7099 18.0106 12.6641C17.9362 12.6182 17.8717 12.5578 17.8209 12.4866C17.7701 12.4155 17.734 12.3348 17.7148 12.2495C17.3087 10.6434 16.3782 9.21866 15.0709 8.2011C13.7635 7.18355 12.154 6.63133 10.4973 6.63193C8.8406 6.63253 7.23148 7.18593 5.92485 8.20443C4.61823 9.22294 3.68882 10.6483 3.28386 12.2548C3.24057 12.4225 3.1327 12.5663 2.98379 12.6548C2.83488 12.7434 2.65701 12.7694 2.48897 12.7273C2.32092 12.6852 2.17634 12.5784 2.08675 12.4301C1.99717 12.2818 1.96984 12.1042 2.01074 11.9358C2.48546 10.0438 3.57859 8.36456 5.11659 7.16469C6.65459 5.96482 8.54932 5.31309 10.5 5.31294Z" fill="black"/>
+                                                </svg>                                                
+                                                <span>16:21   05.09. 2022</span>
+                                            </div>
                                         </div>
-                                        <div class="vacancy-people-item-info-inner">
-                                            <p class="vacancy-people-item__name">
-                                                Бровко Вячеслав
-                                            </p>
-                                            <p class="vacancy-people-item__age">
-                                                48 лет
-                                            </p>
-                                            <p class="vacancy-people-item__other">
-                                                Не указана
-                                            </p>
-                                            <p class="vacancy-people-item__where">
-                                                Кандидат увидел вакансию на HH.ru
-                                            </p>
-                                            <p class="vacancy-people-item__date">
-                                                05.09.2022
-                                            </p>
+                                        <div class="vacancy-people-item-panel f-dc-center">
+                                            <button class="vacancy-people-item-panel__btn btn btn-transp f-center-center">
+                                                Удалить                                               
+                                            </button>
                                         </div>
-                                    </div>
-                                    <div class="vacancy-people-item-post f-dc">
-                                        <p class="vacancy-people-item-post__text">
-                                            <span>11.02.2022 15:11</span> <br>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        </p>
-                                        <div class="vacancy-people-item-post-inner f-center">
-                                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.5 8.37894C10.9597 8.37894 11.4149 8.46948 11.8395 8.6454C12.2642 8.82131 12.6501 9.07915 12.9752 9.4042C13.3002 9.72924 13.5581 10.1151 13.734 10.5398C13.9099 10.9645 14.0004 11.4197 14.0004 11.8794C14.0004 12.3391 13.9099 12.7942 13.734 13.2189C13.5581 13.6436 13.3002 14.0295 12.9752 14.3546C12.6501 14.6796 12.2642 14.9374 11.8395 15.1134C11.4149 15.2893 10.9597 15.3798 10.5 15.3798C9.57161 15.3798 8.68126 15.011 8.02481 14.3546C7.36835 13.6981 6.99955 12.8078 6.99955 11.8794C6.99955 10.951 7.36835 10.0607 8.02481 9.4042C8.68126 8.74774 9.57161 8.37894 10.5 8.37894ZM10.5 9.69144C9.91971 9.69144 9.3632 9.92196 8.95288 10.3323C8.54256 10.7426 8.31205 11.2991 8.31205 11.8794C8.31205 12.4597 8.54256 13.0162 8.95288 13.4265C9.3632 13.8368 9.91971 14.0673 10.5 14.0673C11.0803 14.0673 11.6368 13.8368 12.0471 13.4265C12.4574 13.0162 12.6879 12.4597 12.6879 11.8794C12.6879 11.2991 12.4574 10.7426 12.0471 10.3323C11.6368 9.92196 11.0803 9.69144 10.5 9.69144ZM10.5 5.31294C14.5372 5.31294 18.0206 8.06919 18.9879 11.9319C19.0111 12.0162 19.0171 12.1043 19.0057 12.1911C18.9943 12.2778 18.9656 12.3613 18.9215 12.4368C18.8773 12.5123 18.8185 12.5782 18.7485 12.6306C18.6785 12.6831 18.5988 12.721 18.5139 12.7422C18.429 12.7633 18.3408 12.7673 18.2544 12.7539C18.168 12.7405 18.0851 12.7099 18.0106 12.6641C17.9362 12.6182 17.8717 12.5578 17.8209 12.4866C17.7701 12.4155 17.734 12.3348 17.7148 12.2495C17.3087 10.6434 16.3782 9.21866 15.0709 8.2011C13.7635 7.18355 12.154 6.63133 10.4973 6.63193C8.8406 6.63253 7.23148 7.18593 5.92485 8.20443C4.61823 9.22294 3.68882 10.6483 3.28386 12.2548C3.24057 12.4225 3.1327 12.5663 2.98379 12.6548C2.83488 12.7434 2.65701 12.7694 2.48897 12.7273C2.32092 12.6852 2.17634 12.5784 2.08675 12.4301C1.99717 12.2818 1.96984 12.1042 2.01074 11.9358C2.48546 10.0438 3.57859 8.36456 5.11659 7.16469C6.65459 5.96482 8.54932 5.31309 10.5 5.31294Z" fill="black"/>
-                                            </svg>                                                
-                                            <span>16:21   05.09. 2022</span>
+                                    </li>
+                                    <li class="vacancy-people-item f-jcsb">
+                                        <div class="vacancy-people-item-checkbox f-center checkbox">
+                                            <input type="hidden" name="man">
+                                            <span>
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.3999 4.59998L5.3999 8.59998L13.3999 0.599976" stroke="#5B8AC6" stroke-width="1.5"/>
+                                                </svg>
+                                            </span>
                                         </div>
-                                    </div>
-                                    <div class="vacancy-people-item-panel f-dc-center">
-                                        <button class="vacancy-people-item-panel__btn btn btn-transp f-center-center">
-                                            Удалить                                               
-                                        </button>
-                                    </div>
-                                </li>
-                            </ul>
+                                        <div class="vacancy-people-item-info f-center">
+                                            <div class="vacancy-people-item-info-image">
+                                                <img src="assets/img/people/image.svg" alt="" class="img-cover">
+                                            </div>
+                                            <div class="vacancy-people-item-info-inner">
+                                                <p class="vacancy-people-item__name">
+                                                    Бровко Вячеслав
+                                                </p>
+                                                <p class="vacancy-people-item__age">
+                                                    48 лет
+                                                </p>
+                                                <p class="vacancy-people-item__other">
+                                                    Не указана
+                                                </p>
+                                                <p class="vacancy-people-item__where">
+                                                    Кандидат увидел вакансию на HH.ru
+                                                </p>
+                                                <p class="vacancy-people-item__date">
+                                                    05.09.2022
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="vacancy-people-item-post f-dc">
+                                            <p class="vacancy-people-item-post__text">
+                                                <span>11.02.2022 15:11</span> <br>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            </p>
+                                            <div class="vacancy-people-item-post-inner f-center">
+                                                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10.5 8.37894C10.9597 8.37894 11.4149 8.46948 11.8395 8.6454C12.2642 8.82131 12.6501 9.07915 12.9752 9.4042C13.3002 9.72924 13.5581 10.1151 13.734 10.5398C13.9099 10.9645 14.0004 11.4197 14.0004 11.8794C14.0004 12.3391 13.9099 12.7942 13.734 13.2189C13.5581 13.6436 13.3002 14.0295 12.9752 14.3546C12.6501 14.6796 12.2642 14.9374 11.8395 15.1134C11.4149 15.2893 10.9597 15.3798 10.5 15.3798C9.57161 15.3798 8.68126 15.011 8.02481 14.3546C7.36835 13.6981 6.99955 12.8078 6.99955 11.8794C6.99955 10.951 7.36835 10.0607 8.02481 9.4042C8.68126 8.74774 9.57161 8.37894 10.5 8.37894ZM10.5 9.69144C9.91971 9.69144 9.3632 9.92196 8.95288 10.3323C8.54256 10.7426 8.31205 11.2991 8.31205 11.8794C8.31205 12.4597 8.54256 13.0162 8.95288 13.4265C9.3632 13.8368 9.91971 14.0673 10.5 14.0673C11.0803 14.0673 11.6368 13.8368 12.0471 13.4265C12.4574 13.0162 12.6879 12.4597 12.6879 11.8794C12.6879 11.2991 12.4574 10.7426 12.0471 10.3323C11.6368 9.92196 11.0803 9.69144 10.5 9.69144ZM10.5 5.31294C14.5372 5.31294 18.0206 8.06919 18.9879 11.9319C19.0111 12.0162 19.0171 12.1043 19.0057 12.1911C18.9943 12.2778 18.9656 12.3613 18.9215 12.4368C18.8773 12.5123 18.8185 12.5782 18.7485 12.6306C18.6785 12.6831 18.5988 12.721 18.5139 12.7422C18.429 12.7633 18.3408 12.7673 18.2544 12.7539C18.168 12.7405 18.0851 12.7099 18.0106 12.6641C17.9362 12.6182 17.8717 12.5578 17.8209 12.4866C17.7701 12.4155 17.734 12.3348 17.7148 12.2495C17.3087 10.6434 16.3782 9.21866 15.0709 8.2011C13.7635 7.18355 12.154 6.63133 10.4973 6.63193C8.8406 6.63253 7.23148 7.18593 5.92485 8.20443C4.61823 9.22294 3.68882 10.6483 3.28386 12.2548C3.24057 12.4225 3.1327 12.5663 2.98379 12.6548C2.83488 12.7434 2.65701 12.7694 2.48897 12.7273C2.32092 12.6852 2.17634 12.5784 2.08675 12.4301C1.99717 12.2818 1.96984 12.1042 2.01074 11.9358C2.48546 10.0438 3.57859 8.36456 5.11659 7.16469C6.65459 5.96482 8.54932 5.31309 10.5 5.31294Z" fill="black"/>
+                                                </svg>                                                
+                                                <span>16:21   05.09. 2022</span>
+                                            </div>
+                                        </div>
+                                        <div class="vacancy-people-item-panel f-dc-center">
+                                            <button class="vacancy-people-item-panel__btn btn btn-transp f-center-center">
+                                                Удалить                                               
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="vacancy-people-page f-center-center page">
                                 <a href="" class="vacancy-people-page__btn vacancy-people-page__btn_prev page__btn f-center-center">
                                     <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -3,6 +3,14 @@
 @import '../vendor/_config.scss';
 @import '../vendor/_vars.scss';
 
+// index
+// vacancy-single
+// vacancy-edit
+// favourites
+// summary
+// resume
+
+
 
 body {
     background: #FAFAFA;
@@ -90,6 +98,54 @@ input::placeholder, textarea::placeholder {
     top: 43px;
     width: 100%;
     z-index: 3;
+    &-burger {
+        position: relative;
+        width: 34px;
+        height: 18px;
+        z-index: 3;
+        transition: $anim-default;
+        display: none;
+       // order: 1;
+        span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            height: 2px;
+            border-radius: 60px;
+            transition: $anim-default;
+            &:nth-child(1) {
+                top: 0;
+                transition: $anim-default;
+            }
+            &:nth-child(2) {
+                top: 50%;
+                transform: translateY(-50%);
+                opacity: 1;
+                transition: $anim-default;
+            }
+            &:nth-child(3) {
+                bottom: 0;
+                transition: $anim-default;
+            }
+        }
+        &.open {
+            span {
+                transition: $anim-default;
+                &:nth-child(1) {
+                    top: 50%;
+                    transform: translateY(-50%) rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    top: 50%;
+                    transform: translateY(-50%) rotate(-45deg);
+                }
+            }
+        }
+    }
     &-circle {
         width: 42px;
         height: 42px;
@@ -174,12 +230,14 @@ input::placeholder, textarea::placeholder {
         padding: 43px 0;
         top: unset;
         left: unset;
+        z-index: 6;
         & > svg {
             position: absolute;
             left: 0;
-            bottom: -32px;
+            bottom: -30px;
             width: 100%;
             height: auto;
+            z-index: -2;
         }
         .header {
             &-circle {
@@ -343,7 +401,7 @@ input::placeholder, textarea::placeholder {
     }
     &-link {
         justify-content: center;
-        width: 154px;
+        width: 224px;
         height: 101px;
         background: #FFFFFF;
         box-shadow: 0px 43px 80px rgba(91, 138, 198, 0.07), 0px 9.60461px 17.869px rgba(91, 138, 198, 0.0417275), 0px 2.85954px 5.32008px rgba(91, 138, 198, 0.0282725);
@@ -351,6 +409,7 @@ input::placeholder, textarea::placeholder {
         border: 1px solid transparent;
         transition: $anim-default;
         &__text {
+            text-align: center;
             margin-top: 11px;
             font-size: 14px;
             font-family: 'Gilroy Semibold';
@@ -436,7 +495,8 @@ input::placeholder, textarea::placeholder {
     &-form {
         display: none;
         &.show {
-            display: block;
+            display: flex;
+            flex-direction: column;
         }
         &-block {
             background: #EAEFF5;
@@ -562,7 +622,7 @@ input::placeholder, textarea::placeholder {
                 &__input {
                     border: 1px solid rgba(36, 36, 36, 0.15);
                     border-radius: 14px;
-                    padding: 17px;
+                    padding: 15px;
                     width: 100%;
                     text-align: center;
                 }
@@ -1026,6 +1086,7 @@ input::placeholder, textarea::placeholder {
                 overflow: hidden;
                 height: 100%;
                 transition: $anim-default;
+                padding: 20px 10px;
             }
             &-head {
                 &__square {
@@ -1086,6 +1147,7 @@ input::placeholder, textarea::placeholder {
                 left: 0;
                 top: 0;
                 width: 100%;
+                border-radius: 24px;
                 height: 100%;
                 background: rgba(255, 255, 255, 0.5);
                 backdrop-filter: blur(5px);
@@ -1188,7 +1250,7 @@ input::placeholder, textarea::placeholder {
                 }
             }
             &__link {
-                margin: 50px 0 30px 0;
+                margin-top: 50px;
                 p {
                     font-family: 'Gilroy Semibold';
                     color: #5B8AC6;
@@ -1576,10 +1638,14 @@ input::placeholder, textarea::placeholder {
                 }
             }
             &-filter {
-                margin-bottom: 20px;
+                margin-bottom: 35px;
+                &-top {
+                    flex-wrap: wrap;
+                }
                 &__btn {
                     padding: 16px 20px;
                     background: #EAEFF5;
+                    margin-bottom: 10px;
                     border-radius: 8px;
                     color: #5B8AC6;
                     transition: $anim-default;
@@ -1653,22 +1719,23 @@ input::placeholder, textarea::placeholder {
             padding-bottom: 80px;
         }
         &-block {
-            margin-top: 35px;
+            margin-top: 25px;
             &-head {
-                margin-left: 115px;
-                margin-bottom: 20px;
-                span {
+                & > span {
                     color: #242424;
                     font-size: 22px;
                     font-family: 'Gilroy Semibold';
                     display: inline-block;
-                    &:nth-child(1) {
-                        width: 490px;
-                        margin-right: 25px;
-                    }
                     &:nth-child(2) {
-                        width: 345px;
-                        margin-right: 25px;
+                        width: 510px;
+                        margin-left: 50px;
+                    }
+                    &:nth-child(3) {
+                        width: 340px;
+                    }
+                    &:nth-child(4) {
+                        width: 224px;
+                        text-align: center;
                     }
                 }
             }
@@ -1708,7 +1775,7 @@ input::placeholder, textarea::placeholder {
                 font-family: 'Gilroy Semibold';
             }
             &__age {
-                margin: 5px 0 10px 0;
+                margin-top: 5px;
                 color: #5B8AC6;
                 font-family: 'Gilroy Semibold';
             }
@@ -2172,7 +2239,7 @@ input::placeholder, textarea::placeholder {
             width: 136px;
         }
         &:nth-child(3) {
-            width: 125px;
+            width: 144px;
         }
     }
     &__address, 
@@ -2301,9 +2368,9 @@ input::placeholder, textarea::placeholder {
             padding: 16px;
         }
     }
-    .vacancy-people-block {
+    /*.vacancy-people-block {
         margin-top: 0;
-    }
+    }*/
     .vacancy-people-item-post__text {
         font-size: 14px;
         span {

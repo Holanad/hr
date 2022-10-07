@@ -43,6 +43,11 @@
         <header class="header">
             <div class="container">
                 <div class="header-wrapper f-jcsb">
+                    <button class="header-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <div class="header-data f-jcsb ">
                         <div class="header-data-item f-center">
                             <div class="header-circle f-center-center">
@@ -155,29 +160,21 @@
                             </ul>
                         </div>
                         <div class="intro-links f-jcsb">
-                            <a href="" class="intro-link f-dc-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18.75 11.25C20.8211 11.25 22.5 9.57107 22.5 7.5C22.5 5.42893 20.8211 3.75 18.75 3.75C16.6789 3.75 15 5.42893 15 7.5C15 9.57107 16.6789 11.25 18.75 11.25Z" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M6.25 22.5C8.32107 22.5 10 20.8211 10 18.75C10 16.6789 8.32107 15 6.25 15C4.17893 15 2.5 16.6789 2.5 18.75C2.5 20.8211 4.17893 22.5 6.25 22.5Z" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M25 36.25C27.0711 36.25 28.75 34.5711 28.75 32.5C28.75 30.4289 27.0711 28.75 25 28.75C22.9289 28.75 21.25 30.4289 21.25 32.5C21.25 34.5711 22.9289 36.25 25 36.25Z" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M32.5 15C34.5711 15 36.25 13.3211 36.25 11.25C36.25 9.17893 34.5711 7.5 32.5 7.5C30.4289 7.5 28.75 9.17893 28.75 11.25C28.75 13.3211 30.4289 15 32.5 15Z" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M28.8823 10.2632L22.3672 8.48633" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15.9624 10.0087L9.03711 16.2414" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9.27441 20.9679L21.9756 30.2821" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M26.2485 28.9632L31.2519 14.787" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                    
+                            <a href="" class="intro-link f-dc-center">      
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 21.25C19.934 21.25 22.3125 18.8715 22.3125 15.9375C22.3125 13.0035 19.934 10.625 17 10.625C14.066 10.625 11.6875 13.0035 11.6875 15.9375C11.6875 18.8715 14.066 21.25 17 21.25Z" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.47314 26.4794C9.27349 24.9058 10.4936 23.5844 11.9986 22.6615C13.5035 21.7385 15.2344 21.25 16.9998 21.25C18.7652 21.25 20.4962 21.7385 22.0011 22.6615C23.506 23.5844 24.7262 24.9058 25.5265 26.4793" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M26.5625 9.5625C27.7361 9.5625 28.6875 8.61111 28.6875 7.4375C28.6875 6.26389 27.7361 5.3125 26.5625 5.3125C25.3889 5.3125 24.4375 6.26389 24.4375 7.4375C24.4375 8.61111 25.3889 9.5625 26.5625 9.5625Z" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M26.5625 5.3125V3.71875" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M24.722 6.375L23.3418 5.57812" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M24.722 8.5L23.3418 9.29688" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M26.5625 9.5625V11.1562" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.4028 8.5L29.7831 9.29688" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.4028 6.375L29.7831 5.57812" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M29.6595 15.4727C29.7199 15.9795 29.7501 16.4895 29.75 17C29.75 19.5217 29.0022 21.9868 27.6012 24.0835C26.2003 26.1802 24.209 27.8144 21.8792 28.7795C19.5495 29.7445 16.9859 29.997 14.5126 29.505C12.0393 29.013 9.76751 27.7987 7.98439 26.0156C6.20127 24.2325 4.98695 21.9607 4.49499 19.4874C4.00303 17.0141 4.25552 14.4505 5.22054 12.1208C6.18556 9.79103 7.81976 7.79975 9.91649 6.39876C12.0132 4.99777 14.4783 4.25 17 4.25C17.3989 4.25 17.7933 4.26806 18.1832 4.30417" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                              
                                 <p class="intro-link__text">
-                                    О клубе
-                                </p>
-                            </a>
-                            <a href="" class="intro-link f-dc-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.25 15L20 5L38.75 15L20 25L1.25 15Z" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M29.375 37.5V20L20 15" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M34.375 17.333V25.8519C34.3755 26.1215 34.2884 26.3841 34.1266 26.5998C33.074 28.0005 28.6333 33.1247 20 33.1247C11.3667 33.1247 6.92597 28.0005 5.87336 26.5998C5.71165 26.3841 5.62449 26.1215 5.625 25.8519V17.333" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                    
-                                <p class="intro-link__text">
-                                    Обучение
+                                    Поиск вакансии
                                 </p>
                             </a>
                             <a href="" class="intro-link f-dc-center">
@@ -192,26 +189,7 @@
                                     <path d="M19.9995 18.7497C20.8729 17.5854 22.0053 16.6405 23.3071 15.9897C24.6089 15.3389 26.0443 15 27.4997 15C28.9552 15 30.3906 15.3387 31.6924 15.9895C32.9942 16.6403 34.1267 17.5851 35.0001 18.7493" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>                                    
                                 <p class="intro-link__text">
-                                    Поиск кандидата
-                                </p>
-                            </a>
-                            <a href="" class="intro-link f-dc-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M27.5005 5V20L22.4994 16.25L17.5005 20V5" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7.50049 33.75C7.50049 32.7554 7.89558 31.8016 8.59884 31.0983C9.3021 30.3951 10.2559 30 11.2505 30H32.5005V5H11.2505C10.2559 5 9.3021 5.39509 8.59884 6.09835C7.89558 6.80161 7.50049 7.75544 7.50049 8.75V33.75Z" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7.50049 33.75V35H30.0005" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                    
-                                <p class="intro-link__text">
-                                    Библиотека
-                                </p>
-                            </a>
-                            <a href="" class="intro-link f-dc-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15 27.4988H4.6875C4.43886 27.4988 4.2004 27.4 4.02459 27.2242C3.84877 27.0484 3.75 26.8099 3.75 26.5613V16.2487C3.75 13.2651 4.93526 10.4036 7.04504 8.29382C9.15482 6.18404 12.0163 4.99878 15 4.99878H15C17.9837 4.99878 20.8452 6.18404 22.955 8.29383C25.0647 10.4036 26.25 13.2651 26.25 16.2488V16.2488C26.25 19.2325 25.0647 22.094 22.955 24.2037C20.8452 26.3135 17.9837 27.4988 15 27.4988V27.4988Z" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M14.3901 27.4996C15.1665 29.693 16.6035 31.5919 18.5035 32.9349C20.4035 34.278 22.6731 34.9991 24.9998 34.9991H35.3123C35.561 34.9991 35.7994 34.9004 35.9752 34.7245C36.1511 34.5487 36.2498 34.3103 36.2498 34.0616V23.7491C36.2498 20.8718 35.1473 18.1039 33.1692 16.0145C31.191 13.9251 28.4875 12.673 25.6145 12.5156" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                    
-                                <p class="intro-link__text">
-                                    Справочник
+                                    Массовый поиск
                                 </p>
                             </a>
                             <a href="" class="intro-link f-dc-center">
@@ -221,9 +199,24 @@
                                     <path d="M27.5 8.75H35" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M31.25 5V12.5" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M34.8144 17.6341C35.3109 20.7599 34.8049 23.9627 33.369 26.7833C31.933 29.6039 29.6408 31.8974 26.8211 33.3349C24.0013 34.7724 20.7988 35.2802 17.6726 34.7854C14.5465 34.2907 11.6573 32.8187 9.41923 30.5807C7.1812 28.3427 5.70928 25.4535 5.21451 22.3273C4.71974 19.2012 5.22753 15.9986 6.66508 13.1789C8.10262 10.3591 10.3961 8.06692 13.2167 6.63096C16.0372 5.19501 19.2401 4.68903 22.3659 5.18556" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                  
+                                <p class="intro-link__text">
+                                    Заявки на вакансии
+                                </p>
+                            </a>
+                            <a href="" class="intro-link f-dc-center">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.75 11.25C20.8211 11.25 22.5 9.57107 22.5 7.5C22.5 5.42893 20.8211 3.75 18.75 3.75C16.6789 3.75 15 5.42893 15 7.5C15 9.57107 16.6789 11.25 18.75 11.25Z" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.25 22.5C8.32107 22.5 10 20.8211 10 18.75C10 16.6789 8.32107 15 6.25 15C4.17893 15 2.5 16.6789 2.5 18.75C2.5 20.8211 4.17893 22.5 6.25 22.5Z" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M25 36.25C27.0711 36.25 28.75 34.5711 28.75 32.5C28.75 30.4289 27.0711 28.75 25 28.75C22.9289 28.75 21.25 30.4289 21.25 32.5C21.25 34.5711 22.9289 36.25 25 36.25Z" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M32.5 15C34.5711 15 36.25 13.3211 36.25 11.25C36.25 9.17893 34.5711 7.5 32.5 7.5C30.4289 7.5 28.75 9.17893 28.75 11.25C28.75 13.3211 30.4289 15 32.5 15Z" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.8823 10.2632L22.3672 8.48633" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.9624 10.0087L9.03711 16.2414" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.27441 20.9679L21.9756 30.2821" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M26.2485 28.9632L31.2519 14.787" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>                                    
                                 <p class="intro-link__text">
-                                    HR-вакансии
+                                    О клубе
                                 </p>
                             </a>
                             <a href="" class="intro-link f-dc-center">
@@ -251,7 +244,7 @@
                         <h2 class="main-search__title title">
                             Найдите нужного кандидата
                         </h2>
-                        <form action="" class="main-search-form">
+                        <form action="" class="main-search-form show">
                             <div class="main-search-form-block">
                                 <div class="main-search-form-line">
                                     <p class="main-search-form__text">
@@ -492,6 +485,9 @@
                                                     Мужчина, 27 лет, родился 12 января 1996
                                                 </p>
                                                 <div class="result-item-main-contact f-dc">
+                                                    <p class="result-item-main-contact__link">
+                                                        Готов к командировкам
+                                                    </p>
                                                     <a href="" class="result-item-main-contact__link">
                                                         +7 (961) 767 43 08
                                                     </a>
@@ -628,7 +624,7 @@
                                                         <path d="M1 1.5L5.5 6L1 10.5" stroke="#5B8AC6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                                     </svg>                                                    
                                                 </a>
-                                                <div class="result-item-other-bottom f-center">
+                                           <!--     <div class="result-item-other-bottom f-center">
                                                     <button href="" class="result-item-other-bottom__link btn btn-full">
                                                         Показать телефон
                                                     </button>
@@ -664,7 +660,7 @@
                                                             </svg>                                                                                                        
                                                         </a>
                                                     </div>
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </div>
                                     </div>

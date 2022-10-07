@@ -208,8 +208,14 @@ $(document).ready(function() {
         $('.header-burger').click(function () {
             $('.header-burger').toggleClass('open');
             $('.header').toggleClass('active');
-            $('.header-info').toggleClass('active');
-           // $('html').toggleClass('hidden');
+            $('.header-data').toggleClass('active');
+            if($('.header-burger').hasClass('open')) {
+                $('html').addClass('hidden');
+                $('body').addClass('hidden');
+            } else {
+                $('html').removeClass('hidden');
+                $('body').removeClass('hidden');
+            }
         });
     };
     headerBurger();
