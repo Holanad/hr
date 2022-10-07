@@ -33,8 +33,7 @@
     width: 180px;
   }
   .main-search-other {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .main-search-city .main-search-form-elem {
     width: 453px;
@@ -67,11 +66,7 @@
     margin-bottom: 0;
   }
   .result-head {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    justify-content: space-between;
     display: flex;
   }
   .result-head-left {
@@ -112,11 +107,8 @@
     width: 455px;
   }
   .result-form-recall-estimation ul {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 4px;
   }
   .result-form-recall__title, .result-form-comment__title {
@@ -254,8 +246,7 @@
     width: 435px;
   }
   .vacancy-edit-form-filter-bottom {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .vacancy-edit-form-filter-bottom > .vacancy-edit-form-elem:nth-child(1) {
     width: 190px;
@@ -307,8 +298,22 @@
   .resume__local {
     margin-top: 50px;
   }
+  .job__title {
+    font-size: 36px;
+  }
+  .job-form {
+    margin-top: 50px;
+  }
+  .job-form-main {
+    margin-bottom: 50px;
+  }
+  .job-block {
+    margin-bottom: 50px;
+  }
+  .job-block.works textarea {
+    height: 375px;
+  }
 }
-
 @media screen and (max-width: 992px) {
   .container {
     width: 768px;
@@ -325,23 +330,17 @@
   .header-data {
     padding-top: 106px;
     position: absolute;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     top: -20px;
     height: 100vh;
-    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     left: -355px;
     background: #5B8AC6;
     padding-right: 40px;
   }
   .header-data::before {
-    content: '';
+    content: "";
     width: 1000px;
     height: calc(100% + 20px);
     z-index: -1;
@@ -366,9 +365,7 @@
     left: 0;
   }
   .header-wrapper {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .header-burger {
     display: block;
@@ -428,16 +425,13 @@
     width: 230px;
   }
   .intro-links {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .intro-link {
     margin-bottom: 10px;
   }
-  .intro-link:not(:nth-child(5n + 5)) {
+  .intro-link:not(:nth-child(5n+5)) {
     margin-right: 10px;
   }
   .intro-link:last-child {
@@ -468,17 +462,14 @@
   }
   .main-search-advanced {
     /*  &-item__title {
-                    width: 275px;
-                }
-                &-block {
-                    width: 435px;
-                }*/
+          width: 275px;
+      }
+      &-block {
+          width: 435px;
+      }*/
   }
   .main-search-advanced-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .main-search-advanced-item__title {
     margin-bottom: 20px;
@@ -487,10 +478,7 @@
     width: 100%;
   }
   .main-search-bottom-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .main-search-bottom-block .main-search-checkbox:first-child {
     margin-bottom: 10px;
@@ -515,10 +503,7 @@
     padding-bottom: 80px;
   }
   .result-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
   }
   .result-item-info {
@@ -554,10 +539,7 @@
     line-height: 120%;
   }
   .result-main-btns {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .result-main__btn:first-child {
     margin-right: 0;
@@ -567,9 +549,7 @@
     text-align: center;
   }
   .result-form-recall-estimation ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     gap: 10px;
   }
   .result-resume__btn {
@@ -624,11 +604,8 @@
     margin-bottom: 15px;
   }
   .footer-main {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .footer-info {
     text-align: center;
@@ -637,9 +614,7 @@
   }
   .footer-nav {
     width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .footer-block:nth-child(1) {
     width: 30%;
@@ -667,10 +642,7 @@
     width: 172px;
   }
   .vacancy-main-form-stat {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-main-form-stat-item {
     width: 100%;
@@ -700,8 +672,7 @@
     display: none;
   }
   .vacancy-people-item {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .vacancy-people-item-info {
     width: calc(100% - 45px);
@@ -715,13 +686,8 @@
   }
   .vacancy-people-item-post {
     width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0;
     margin-top: 20px;
   }
@@ -729,10 +695,7 @@
     width: 510px;
   }
   .vacancy-people-item-panel {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     padding: 0;
     border: none;
     width: 100%;
@@ -748,10 +711,7 @@
     margin-right: 20px;
   }
   .vacancy-info-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-info__title {
     font-size: 22px;
@@ -783,14 +743,9 @@
     text-align: left;
   }
   .vacancy-info-news-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .vacancy-info-news-item {
     width: 49%;
@@ -799,12 +754,8 @@
     text-align: left;
   }
   .vacancy-info-vac-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .vacancy-info-vac-item {
     width: 49%;
@@ -814,10 +765,7 @@
     margin-bottom: 0;
   }
   .vacancy-edit-form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-edit-form > .vacancy-edit-form-elem {
     width: 100%;
@@ -848,10 +796,7 @@
     margin-right: 0;
   }
   .vacancy-single .vacancy-edit-form {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .vacancy-single .vacancy-edit-form-elem {
     width: 465px;
@@ -872,8 +817,13 @@
   .resume__local {
     margin-top: 40px;
   }
+  .job__title {
+    font-size: 32px;
+  }
+  .job-main__title {
+    margin-bottom: 30px;
+  }
 }
-
 @media screen and (max-width: 768px) {
   .container {
     width: 576px;
@@ -889,14 +839,12 @@
     font-size: 30px;
   }
   .intro-use-list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .intro-use-item {
     width: 400px;
   }
-  .intro-use-item:not(:nth-child(3n + 3)) {
+  .intro-use-item:not(:nth-child(3n+3)) {
     margin-right: 0;
   }
   .intro-use-item:not(:last-child) {
@@ -908,10 +856,10 @@
   .intro-link {
     margin-bottom: 10px;
   }
-  .intro-link:not(:nth-child(5n + 5)) {
+  .intro-link:not(:nth-child(5n+5)) {
     margin-right: 0;
   }
-  .intro-link:not(:nth-child(4n + 4)) {
+  .intro-link:not(:nth-child(4n+4)) {
     margin-right: 10px;
   }
   .main-search-city {
@@ -930,10 +878,7 @@
   }
   .main-search-bottom {
     margin-top: 30px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .main-search-bottom__btn {
     margin-bottom: 20px;
@@ -961,15 +906,10 @@
   }
   .result-item-bottom {
     margin-top: 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .result-item-bottom__contact {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
     margin-left: 0;
   }
   .result-item-bottom__link {
@@ -982,14 +922,11 @@
     display: block;
   }
   .result-item-main {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .result-item-main-image {
     width: 100%;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
     margin-bottom: 30px;
   }
   .result-item-history-info {
@@ -1042,10 +979,7 @@
     margin-bottom: 5px;
   }
   .vacancy-main-form-top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-main-form-top .vacancy-main-form-line {
     width: 100% !important;
@@ -1055,10 +989,7 @@
   }
   .vacancy-main-form-bottom {
     margin-top: 15px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-main-form-bottom .vacancy-main-form-line {
     width: 100% !important;
@@ -1089,18 +1020,11 @@
   }
   .vacancy-main-form__btn {
     margin: 30px auto 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .vacancy-edit-form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-edit-form-block {
     margin-top: 0;
@@ -1110,33 +1034,23 @@
   }
   .vacancy-edit-form-filter-bottom > .vacancy-edit-form-elem:nth-child(1) {
     width: 270px;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .vacancy-edit-form-filter-bottom > .vacancy-edit-form-elem:nth-child(2) {
     width: 270px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .vacancy-edit-form-filter-bottom > .vacancy-edit-form-elem:nth-child(4) {
     width: 100%;
     margin-top: 10px;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    order: 3;
   }
   .vacancy-edit-form-filter-bottom > .vacancy-edit-form-age:nth-child(3) {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    order: 4;
     margin-top: 10px;
   }
   .vacancy-edit-form-filter-bottom > .vacancy-edit-form-age:nth-child(5) {
-    -webkit-box-ordinal-group: 6;
-        -ms-flex-order: 5;
-            order: 5;
+    order: 5;
     margin-top: 10px;
   }
   .vacancy-edit-form-filter-bottom > .vacancy-edit-form-age .vacancy-edit-form-elem {
@@ -1146,17 +1060,11 @@
     margin-right: auto;
   }
   .vacancy-people-top-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
   }
   .vacancy-people-item {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .vacancy-people-item-post__text {
     width: 335px;
@@ -1192,7 +1100,7 @@
   .vacancy-info-choice-item:nth-child(1), .vacancy-info-choice-item:nth-child(2), .vacancy-info-choice-item:nth-child(3), .vacancy-info-choice-item:nth-child(4) {
     width: 100%;
   }
-  .vacancy-info-choice-item:not(:nth-last-child(-n + 2)) {
+  .vacancy-info-choice-item:not(:nth-last-child(-n+2)) {
     margin-bottom: 0;
   }
   .vacancy-info-choice-item:not(:last-child) {
@@ -1204,17 +1112,11 @@
     margin-bottom: 20px;
   }
   .vacancy-single .vacancy-people-item-views {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     text-align: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 0;
   }
   .vacancy-single .vacancy-people-item-views-block {
@@ -1231,13 +1133,8 @@
   .vacancy-single .vacancy-people-item-panel {
     padding-left: 0;
     border: none;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    justify-content: center;
     gap: 10px;
     width: 100%;
     margin-top: 20px;
@@ -1249,10 +1146,7 @@
     margin-bottom: 0;
   }
   .vacancy-single .vacancy-edit-form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-single .vacancy-edit-form-elem {
     width: 100%;
@@ -1261,10 +1155,7 @@
     margin-top: 15px;
   }
   .favorite-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-bottom: 50px;
   }
   .favorite__descr {
@@ -1316,8 +1207,32 @@
   .resume-contact-map {
     margin-top: 40px;
   }
+  .job__title {
+    font-size: 28px;
+  }
+  .job-form {
+    width: 100%;
+  }
+  .job-form-main {
+    margin-bottom: 50px;
+  }
+  .job-form-main__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .job-block.works textarea {
+    margin-top: 30px;
+    height: 270px;
+  }
+  .job-block-bottom .job-block-btns {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .job-block__link {
+    margin-top: 30px;
+  }
 }
-
 @media screen and (max-width: 576px) {
   .select-accord .select-list {
     width: 100%;
@@ -1366,12 +1281,8 @@
     max-width: 355px;
     width: 100%;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .intro-background {
     height: 550px;
@@ -1393,18 +1304,16 @@
     margin-top: 16px;
   }
   .intro-links {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     gap: 2%;
   }
   .intro-link {
     width: 49%;
   }
-  .intro-link:not(:nth-child(5n + 5)) {
+  .intro-link:not(:nth-child(5n+5)) {
     margin-right: 0;
   }
-  .intro-link:not(:nth-child(4n + 4)) {
+  .intro-link:not(:nth-child(4n+4)) {
     margin-right: 0;
   }
   .main-search-wrapper {
@@ -1415,13 +1324,11 @@
   }
   .main-search-form {
     /*display: flex;
-                flex-direction: column;*/
+    flex-direction: column;*/
   }
   .main-search-form-block {
     padding: 20px 10px;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
     margin-bottom: 0;
     border-radius: 24px 24px 0 0;
   }
@@ -1431,9 +1338,7 @@
     border-radius: 14px;
   }
   .main-search__btn {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
     margin: 0;
     width: calc(100% - 20px);
     position: relative;
@@ -1441,7 +1346,7 @@
     border-radius: 14px;
   }
   .main-search__btn::before {
-    content: '';
+    content: "";
     position: absolute;
     background: #EAEFF5;
     left: -11px;
@@ -1462,24 +1367,20 @@
     margin-right: 24px;
   }
   .main-search-male-block {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
   .main-search-checkbox:not(:last-child) {
     margin-bottom: 20px;
   }
   .main-search-advanced-block {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .main-search-advanced-checkbox {
     margin-bottom: 10px;
     /* span {
-                        margin: 0;
-                    }*/
+         margin: 0;
+     }*/
   }
   .main-search-advanced-item.license .checkbox > span {
     width: 40px;
@@ -1491,10 +1392,7 @@
     padding-bottom: 30px;
   }
   .result-item-body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .result-item-block:nth-child(1) {
     width: 100%;
@@ -1507,12 +1405,7 @@
     padding: 20px 10px;
   }
   .result-item-main-info__activity {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: column;
     display: flex;
   }
   .result-item-main-info__activity span {
@@ -1523,10 +1416,7 @@
     width: 100%;
   }
   .result-item-history-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .result-item-history-date {
     width: 100%;
@@ -1534,11 +1424,7 @@
   .result-item-other {
     margin-left: 0;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    justify-content: center;
     display: flex;
   }
   .result-item-tags {
@@ -1551,16 +1437,13 @@
     margin-bottom: 30px;
   }
   .work-stage {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .work-stage-item {
     width: 48%;
   }
-  .work-stage-item:not(:nth-last-child(-n + 2)) {
+  .work-stage-item:not(:nth-last-child(-n+2)) {
     margin-bottom: 30px;
   }
   .work-stage-item > svg {
@@ -1583,8 +1466,7 @@
     margin-bottom: 40px;
   }
   .footer-nav {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .footer-block:nth-child(1) {
     width: 48%;
@@ -1597,13 +1479,8 @@
     margin-top: 40px;
   }
   .footer-bottom {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 30px;
     margin-top: 60px;
   }
@@ -1626,10 +1503,7 @@
     margin-bottom: 20px;
   }
   .vacancy-edit-form-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-edit-form-elem {
     padding: 15px 20px;
@@ -1670,10 +1544,7 @@
     margin-top: auto;
   }
   .vacancy-people-top-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-people-item {
     padding: 20px 10px;
@@ -1687,10 +1558,7 @@
     padding: 0;
     border: none;
     margin: 15px 0 0 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-people-item-info-inner {
     margin-top: 15px;
@@ -1699,15 +1567,12 @@
   .vacancy-people-item-info-image {
     margin-right: 0;
     /* width: 100px;
-                        height: 100px;
-                        margin-right: 15px;*/
+     height: 100px;
+     margin-right: 15px;*/
   }
   .vacancy-people-item-post {
     margin-top: 15px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-people-item-post__text {
     width: 100%;
@@ -1717,10 +1582,7 @@
     margin-top: 10px;
   }
   .vacancy-people-item-panel {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-people-item-panel__btn {
     width: 100%;
@@ -1730,10 +1592,7 @@
     margin-bottom: 10px;
   }
   .vacancy-info-manager-inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-info-form-elem {
     width: 100%;
@@ -1752,19 +1611,13 @@
     width: calc(100% - 90px);
   }
   .vacancy-info-choice-inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-info-choice__title {
     margin-bottom: 20px;
   }
   .vacancy-info-choice-block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .vacancy-info-choice-block-inner {
     padding: 20px 10px;
@@ -1772,9 +1625,7 @@
   .vacancy-info-choice-diagram {
     padding: 20px 10px;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .vacancy-info-choice-item {
     width: 49% !important;
@@ -1783,8 +1634,7 @@
     width: 100%;
   }
   .vacancy-info-vac-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .vacancy-info-vac-item {
     width: 100%;
@@ -1827,5 +1677,24 @@
   .resume-info {
     margin: 20px 0 30px 0;
   }
-}
-/*# sourceMappingURL=media.css.map */
+  .job__title {
+    font-size: 26px;
+    line-height: normal;
+  }
+  .job-block-btns {
+    flex-direction: column;
+  }
+  .job-block-bottom .job-block__btn {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    margin-right: 0;
+  }
+  .job-block.works textarea {
+    height: 190px;
+  }
+  .job-block__link {
+    margin-top: 0;
+    text-align: center;
+  }
+}/*# sourceMappingURL=media.css.map */

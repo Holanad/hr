@@ -1,5 +1,19 @@
 // jQuery function
 $(document).ready(function() {
+    //hidden input 
+    function hiddenField () {
+        $('._field').find('.job-checkbox').click(function () {
+            setTimeout(() => {
+                if($(this).parent().find('.job-checkbox').eq(0).hasClass('active')) {
+                    $('._field-hidden').css('display', 'none');
+                } else {
+                    $('._field-hidden').css('display', 'block');
+                }
+            }, 50);
+        })
+
+    }
+    hiddenField()
     //closeModal
     function closeModal() {
         $('.popup-close, .close').click(function() {
